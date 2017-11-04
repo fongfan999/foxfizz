@@ -78,6 +78,12 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+staging:
+  <<: *default
+  database: foxfizz_staging
+  username: foxfizz
+  password: <%= ENV['FOXFIZZ_DATABASE_PASSWORD'] %>
+
 production:
   <<: *default
   database: foxfizz_production
