@@ -1,5 +1,11 @@
 {
   "name": "foxfizz",
-  "private": true,
-  "dependencies": {}
+  "version": "1.0.0",
+  "description": "FoxFizz",
+  "repository": "https://github.com/fongfan999/foxfizz",
+  "author": "Phong Phan <fongfan999@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "spectre.css": "^0.4.5"
+  }
 }
