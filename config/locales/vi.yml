@@ -1,4 +1,10 @@
 vi:
+  app_name: FoxFizz
+
+  login: Đăng nhập
+  logout: Đăng xuất
   sessions:
+    signed_in: Đăng nhập thành công
     failure:
-      unauthenticated: 'Bạn phải đăng nhập trước'
+      unauthenticated: Bạn phải đăng nhập trước
+      invalid: Vui lòng dùng email từ nhà trường cung cấp để đăng nhập (@gm.uit.edu.vn)
