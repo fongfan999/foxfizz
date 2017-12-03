@@ -6,10 +6,7 @@ html
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
-    - if user_signed_in?
-      = link_to t('logout'), logout_path, method: :delete
-    - else
-      = link_to t('login'), oauth_path(:google_oauth2)
-
-    = render 'layouts/flash'
-    = yield
+    = render 'layouts/header'
+    .container
+      = render 'layouts/flash'
+      = yield
