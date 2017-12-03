@@ -1,0 +1,8 @@
+header.navbar.container
+  section.navbar-section
+    = link_to t('app_name'), root_path
+  section.navbar-section
+    - if user_signed_in?
+      = link_to t('logout'), logout_path, method: :delete
+    - else
+      = link_to t('login'), oauth_path(:google_oauth2)
