@@ -1,0 +1,4 @@
+vi:
+  sessions:
+    failure:
+      unauthenticated: 'Bạn phải đăng nhập trước'
