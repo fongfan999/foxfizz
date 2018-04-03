@@ -6,6 +6,7 @@
   "author": "Phong Phan <fongfan999@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "spectre.css": "0.5.1"
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1"
   }
 }
