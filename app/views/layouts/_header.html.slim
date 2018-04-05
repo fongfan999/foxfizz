@@ -1,9 +1,18 @@
-header.navbar.container
-  section.navbar-section
-  section.navbar-center
-    = link_to t('app_name'), root_path, class: 'logo'
-  section.navbar-section
-    - if user_signed_in?
-      = link_to t('logout'), logout_path, method: :delete
-    - else
-      = link_to t('login'), oauth_path(:google_oauth2)
+.container
+  nav.navbar.navbar-expand-sm.fixed-top.bg-white
+    = link_to t('app_name'), root_path, class: 'navbar-brand'
+
+    button.navbar-toggler aria-label=("Toggle navigation") data-target="#navbar-supported-content" data-toggle="collapse" type="button"
+      span.oi.oi-menu
+    #navbar-supported-content.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto
+        - if user_signed_in?
+          li.nav-item.dropdown
+            a#navbar-dropdown.nav-link.dropdown-toggle aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button"
+              = t('account')
+            .dropdown-menu.dropdown-menu-right aria-labelledby="navbar-dropdown"
+              a.dropdown-item href="#" Settings
+              .dropdown-divider
+              = link_to t('logout'), logout_path, method: :delete, class: 'dropdown-item'
+        - else
+          = link_to t('login'), oauth_path(:google_oauth2), class: 'nav-link'

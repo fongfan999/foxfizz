@@ -1,5 +1,6 @@
 vi:
   app_name: FoxFizz
+  account: Tài khoản
 
   login: Đăng nhập
   logout: Đăng xuất

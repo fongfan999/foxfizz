@@ -1,8 +1,7 @@
-.logo {
-  font-size: 1.5rem;
-  font-family: monospace;
+nav.navbar {
+  box-shadow: 0 2px 2px -2px $shadow-color;
+}
 
-  &:hover {
-    text-decoration: none;
-  }
+.content {
+  padding-top: 65px;
 }
