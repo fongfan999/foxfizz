@@ -4,6 +4,10 @@ vi:
 
   login: Đăng nhập
   logout: Đăng xuất
+
+  cancel: Hủy bỏ
+  save_changes: Lưu thay đôi
+
   sessions:
     signed_in: Đăng nhập thành công
     failure:
